@@ -11,7 +11,7 @@ const PunchReport = () => {
       <section className="header">
         <div className="header flexSpaceBetwee">
           <img alt="" src="./img/logo.png" width={200} />
-          <div className="header-title">Inspection Report</div>
+          {/* <div className="header-title">Inspection Report</div> */}
         </div>
       </section>
       <div class="divider-green"></div>
