@@ -1,0 +1,42 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.header-logo {
+  font-weight: 600;
+  height: 40px;
+  font-size: 48px;
+}
+
+.header-title {
+  font-weight: 600;
+  height: 40px;
+  font-size: 48px;
+  color: var(--dividerGreen);
+}
+
+.report-adress {
+  margin: 20px 0px;
+}
+
+.report-adress_type {
+  flex: 0.4;
+  margin-bottom: 10px;
+}
+
+.report-adress_value {
+  flex: 1;
+  font-weight: 600;
+}
+
+.items-header_title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.items-divider {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--dividerGreen);
+}
