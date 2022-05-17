@@ -3,6 +3,8 @@ import "./punchReport.scss";
 
 import React from "react";
 import { falseData } from "../Data/Data";
+import { green, orange } from "../constants/color";
+import { Button, Grid } from "@material-ui/core";
 import AccordionComponent from "../Accordion/AccordionComponent";
 
 const PunchReport = () => {
@@ -14,23 +16,43 @@ const PunchReport = () => {
           {/* <div className="header-title">Inspection Report</div> */}
         </div>
       </section>
-      <div class="divider-green"></div>
-      <section class="report-adress">
-        <div class="flex">
-          <div class="report-adress_type">Agent Name:</div>
-          <div class="report-adress_value">Mary Williams</div>
+      <div className="divider-green"></div>
+      <section className="report-adress">
+        <div className="flex report-adress_item">
+          <div className="report-adress_type">Agent Name:</div>
+          <div className="report-adress_value">Mary Williams</div>
         </div>
-        <div class="flex">
-          <div class="report-adress_type">Property Address:</div>
-          <div class="report-adress_value">
+        <div className="flex report-adress_item">
+          <div className="report-adress_type">Property Address:</div>
+          <div className="report-adress_value">
             9848 Kamlea Dr, Mannassas, VA 20110
           </div>
         </div>
       </section>
 
-      <section class="items">
-        <div class="items-header_title">Item List</div>
-        <div class="items-divider"></div>
+      <section className="items">
+        <div className="items-header_title">Item List</div>
+        <div className="items-divider"></div>
+        <Grid
+          style={{ marginBottom: 10 }}
+          container
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <div className="total-selected">
+            Total Selected: <span style={{ color: green }}>$200</span>
+          </div>
+          <Button
+            variant="contained"
+            style={{
+              backgroundColor: orange,
+              color: "white",
+              borderColor: orange,
+            }}
+          >
+            Request Fixed Price
+          </Button>
+        </Grid>
         <AccordionComponent data={falseData} />
       </section>
     </div>
