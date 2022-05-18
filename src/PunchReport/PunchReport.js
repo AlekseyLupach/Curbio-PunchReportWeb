@@ -3,8 +3,8 @@ import "./punchReport.scss";
 
 import React from "react";
 import { falseData } from "../Data/Data";
-import { green, orange } from "../constants/color";
-import { Button, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+import { green } from "../constants/color";
 import AccordionComponent from "../Accordion/AccordionComponent";
 
 const PunchReport = () => {
@@ -42,16 +42,6 @@ const PunchReport = () => {
           <div className="total-selected">
             Total Selected: <span style={{ color: green }}>$200</span>
           </div>
-          <Button
-            variant="contained"
-            style={{
-              backgroundColor: orange,
-              color: "white",
-              borderColor: orange,
-            }}
-          >
-            Request Fixed Price
-          </Button>
         </Grid>
         <AccordionComponent data={falseData} />
       </section>
